@@ -595,15 +595,6 @@ twophoton_sim/
   examples/                 # optional local reference data; ignored by default
 ```
 
-## References
-
-Indicator preset values and modeling choices were informed by:
-
-- Chen et al., 2013, [Ultrasensitive fluorescent proteins for imaging neuronal activity](https://www.nature.com/articles/nature12354).
-- Dana et al., 2019, [High-performance GFP-based calcium indicators for imaging activity in neuronal populations and microcompartments](https://www.nature.com/articles/s41592-019-0435-6).
-- Zhang et al., 2023, [Fast and sensitive GCaMP calcium indicators for imaging neural populations](https://www.nature.com/articles/s41586-023-05828-9).
-- Janelia Research Campus, [jGCaMP8 Calcium indicators](https://www.janelia.org/jgcamp8-calcium-indicators).
-
 ## Acknowledgements
 Katrina P. Nguyen
 
