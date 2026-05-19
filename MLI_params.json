@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "recording": {
+    "n_active_neurons": 20,
+    "n_inactive_neurons": 30,
+    "duration_s": 10.0,
+    "image_h_px": 256,
+    "image_w_px": 256,
+    "frame_rate_hz": 100.0,
+    "seed": 40
+  },
+  "spiking_activity": {
+    "baseline_rate_min_hz": 0.5,
+    "baseline_rate_max_hz": 3.0,
+    "isi_cv": 1.0,
+    "burst_alpha": 0.0,
+    "burst_tau_s": 0.01,
+    "enable_epoch": true,
+    "activity_onsets": "1:2:10",
+    "active_duration_s": 0.25,
+    "onset_jitter_s": 0.25,
+    "offset_jitter_s": 0.0,
+    "fixed_duration_after_onset_jitter": false,
+    "peak_rate_min_hz": 20.0,
+    "peak_rate_max_hz": 80.0,
+    "epoch_profile": "box"
+  },
+  "calcium_indicator": {
+    "preset": "GCaMP8f",
+    "tau_rise_s": 0.007,
+    "tau_decay_s": 0.097,
+    "single_ap_dff": 0.41,
+    "prolong_burst_tail": false,
+    "burst_window_s": 0.2,
+    "burst_threshold_spikes": 3,
+    "tail_tau_s": 0.7,
+    "tail_scale": 0.25
+  },
+  "cell_morphology": {
+    "cell_gain": 0.1,
+    "f0_baseline": 0.175,
+    "gain_cv": 0.35,
+    "f0_cv": 0.25,
+    "morphology": "Soma + processes",
+    "radius_min_px": 5.0,
+    "radius_max_px": 7.0,
+    "min_separation": 1.5,
+    "shape_irregularity": 0.28,
+    "psf_sigma_px": 0.0,
+    "donut_sigma_px": 0.0,
+    "donut_contrast": 0.0,
+    "process_probability": 0.25,
+    "processes_per_roi": 2,
+    "process_diameter_px": 0.25,
+    "length_min_px": 100.0,
+    "length_max_px": 250.0,
+    "orientation_deg": 90.0,
+    "angle_jitter_deg": 15.0,
+    "continuity": 0.95,
+    "process_f0_x": 0.55,
+    "process_gain_x": 0.55,
+    "flow_speed_px_s": 1000.0,
+    "flow_bins": 2,
+    "varicosity_density_per_px": 0.103,
+    "varicosity_size_px": 0.7,
+    "varicosity_strength": 1.0
+  },
+  "neuropil": {
+    "blobs": 50,
+    "blob_sigma_min_px": 25.0,
+    "blob_sigma_max_px": 55.0,
+    "oscillation_amp": 0.0,
+    "oscillation_freq_hz": 0.0,
+    "neuropil_noise": 0.004,
+    "bleed_fraction": 0.2,
+    "dc_level": 0.0
+  },
+  "motion": {
+    "jitter_sigma_px": 0.7,
+    "jitter_tau_s": 0.05,
+    "saccade_size_px": 3.0,
+    "saccade_rate_hz": 0.05,
+    "saccade_hold_s": 0.02
+  },
+  "noise": {
+    "read_noise_sigma": 0.102,
+    "shot_noise_coeff": 0.3,
+    "adc_bit_depth": 13,
+    "counts_scale_ct_per_au": 400.0
+  }
+}

@@ -1,0 +1,30 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# IDE and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local examples and generated simulation data
+examples/
+*.mat
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.tif
+*.tiff
+
+# Logs and temporary files
+*.log
+tmp/
+temp/

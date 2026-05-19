@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "recording": {
+    "n_active_neurons": 100,
+    "n_inactive_neurons": 100,
+    "duration_s": 30.0,
+    "image_h_px": 128,
+    "image_w_px": 256,
+    "frame_rate_hz": 115.0,
+    "seed": 42
+  },
+  "spiking_activity": {
+    "baseline_rate_min_hz": 0.0,
+    "baseline_rate_max_hz": 1.0,
+    "isi_cv": 1.0,
+    "burst_alpha": 0.0,
+    "burst_tau_s": 0.01,
+    "enable_epoch": true,
+    "activity_onsets": "1:2:30",
+    "active_duration_s": 0.05,
+    "onset_jitter_s": 0.1,
+    "lock_onset_jitter_per_cell": true,
+    "offset_jitter_s": 0.0,
+    "fixed_duration_after_onset_jitter": true,
+    "peak_rate_min_hz": 50.0,
+    "peak_rate_max_hz": 100.0,
+    "epoch_profile": "box"
+  },
+  "calcium_indicator": {
+    "preset": "Custom",
+    "tau_rise_s": 0.004,
+    "tau_decay_s": 0.04,
+    "single_ap_dff": 0.05,
+    "prolong_burst_tail": true,
+    "burst_window_s": 0.2,
+    "burst_threshold_spikes": 3,
+    "tail_tau_s": 0.7,
+    "tail_scale": 0.25
+  },
+  "cell_morphology": {
+    "cell_gain": 1.0,
+    "f0_baseline": 0.5,
+    "gain_cv": 0.5,
+    "f0_cv": 0.35,
+    "morphology": "Soma only",
+    "radius_min_px": 2.0,
+    "radius_max_px": 3.5,
+    "min_separation": 1.5,
+    "shape_irregularity": 0.1,
+    "psf_sigma_px": 0.9,
+    "donut_sigma_px": 0.0,
+    "donut_contrast": 0.0,
+    "process_probability": 1.0,
+    "processes_per_roi": 1,
+    "process_diameter_px": 1.0,
+    "length_min_px": 25.0,
+    "length_max_px": 120.0,
+    "orientation_deg": 0.0,
+    "angle_jitter_deg": 60.0,
+    "continuity": 0.75,
+    "process_f0_x": 0.6,
+    "process_gain_x": 0.8,
+    "flow_speed_px_s": 80.0,
+    "flow_bins": 7,
+    "varicosity_density_per_px": 0.0,
+    "varicosity_size_px": 1.0,
+    "varicosity_strength": 3.0
+  },
+  "neuropil": {
+    "blobs": 10,
+    "blob_sigma_min_px": 15.0,
+    "blob_sigma_max_px": 35.0,
+    "oscillation_amp": 0.0,
+    "oscillation_freq_hz": 0.0,
+    "neuropil_noise": 0.03,
+    "bleed_fraction": 0.2,
+    "dc_level": 0.1
+  },
+  "motion": {
+    "jitter_sigma_px": 0.5,
+    "jitter_tau_s": 0.05,
+    "saccade_size_px": 2.0,
+    "saccade_rate_hz": 0.05,
+    "saccade_hold_s": 0.02
+  },
+  "noise": {
+    "read_noise_sigma": 0.4,
+    "shot_noise_coeff": 0.3,
+    "adc_bit_depth": 13,
+    "counts_scale_ct_per_au": 600.0
+  }
+}
