@@ -6,6 +6,10 @@ The current GUI can simulate granule-cell-like soma recordings, soma plus axon/d
 
 This project was originally derived from MATLAB simulation scripts including `simgrc_2026_kpn.m` and `simulate_2p_stack_from_calcium_v3.m`.
 
+![Two-Photon Simulation GUI frame viewer](images/GUI_frame_viewer.png)
+
+![Two-Photon Simulation GUI trace view](images/GUI_trace_view.png)
+
 ## Highlights
 
 - Interactive dark-theme GUI for configuring and previewing simulated recordings.
