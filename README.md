@@ -24,17 +24,6 @@ This project was originally derived from MATLAB simulation scripts including `si
 - Export to TIFF and analysis data formats for Python and MATLAB.
 - Import/export JSON parameter presets for reusing exact simulation settings.
 
-## Example Data
-
-During development, a local `examples/` folder can be used for real in vivo reference recordings from cerebellar imaging sessions:
-
-- `granule_cells_8bit.tif`
-- `molecular_layer_interneurons.gif`
-- `purkinje_cell_dendrites_8bit.tif`
-
-These examples motivated the current defaults and morphology controls. The granule-cell example is closest to the default soma-only settings. Molecular layer interneuron recordings motivate soma + process simulations, while Purkinje cell dendrite recordings motivate dendritic-branch simulations without cell bodies.
-
-The `examples/` folder is ignored by default so private, large, or redistribution-restricted imaging data are not accidentally committed. If public example data are added later, remove or narrow the `examples/` rule in `.gitignore`.
 
 ## Installation
 
@@ -601,5 +590,6 @@ twophoton_sim/
 
 ## Acknowledgements
 Katrina P. Nguyen
+Person Lab - CU Anschutz
 
 Tool to create synthetic two-photon calcium imaging simulated tiff stacks to benchmark downstream analysis tools such as Suite2P and CaImAn.
